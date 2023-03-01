@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.6.21</kotlin.version>
+		<springdoc.version>1.6.9</springdoc.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -53,6 +54,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- SWAGGER: -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-data-rest</artifactId>
+			<version>${springdoc.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${springdoc.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-kotlin</artifactId>
+			<version>${springdoc.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
