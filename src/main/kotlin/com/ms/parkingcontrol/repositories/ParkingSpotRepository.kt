@@ -7,4 +7,7 @@ import java.util.UUID
 
 @Repository // Não é obrigatório, pois JpaRepository já tem a annotation
 interface ParkingSpotRepository: JpaRepository<ParkingSpotModel, UUID> {
+    fun existsByLicensePlateCar(licensePlateCar: String): Boolean
+    fun existsByParkingSpotNumber(parkingSpotNumber: String): Boolean
+    fun existsByApartmentAndBlock(apartment: String, block: String): Boolean
 }
